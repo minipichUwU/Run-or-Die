@@ -1,28 +1,33 @@
 package fr.epita.mti.jee.domain.repository;
 
-import fr.epita.mti.jee.domain.model.edition.Edition;
-import fr.epita.mti.jee.domain.model.zombie.Zombie;
+import fr.epita.mti.jee.domain.models.coureur.Coureur;
+import fr.epita.mti.jee.domain.models.edition.Edition;
+import fr.epita.mti.jee.domain.models.zombie.Zombie;
 
-import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 public interface EditionRepository {
 
-    void create(Edition edition);
+    void organize(Edition domainEdition);
 
-    List<Edition> getAll();
+    Set<Edition> getAllEditions();
 
-    Optional<Edition> getEdition(Edition edition);
+    Optional<Edition> get(Edition domainEditionName);
 
-    List<Edition> getActive();
+    Set<Edition> getActiveEditions();
 
-    boolean existsByName(String name);
+    boolean existsEditionWithName(String name);
 
-    boolean canReserveTimeSlot(Edition edition);
+    boolean doOverlapAnotherEdition(Edition domainEdition);
 
-    void delete(Edition edition);
+    void delete(Edition domainEditionName);
 
-    void cancel(Edition edition);
+    void cancel(Edition domainEditionName);
 
-    void register(Zombie zombie);
+    void affect(Zombie zombie);
+
+    void register(Coureur runner);
+
+    Set<Edition> getEditionWithRegisteredRunner(Coureur runnerName);
 }

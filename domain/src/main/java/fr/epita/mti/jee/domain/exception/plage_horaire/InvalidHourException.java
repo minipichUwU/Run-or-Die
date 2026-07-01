@@ -1,7 +1,0 @@
-package fr.epita.mti.jee.domain.exception.plage_horaire;
-
-public class InvalidHourException extends InvalidTimeSlotException {
-    public InvalidHourException() {
-        super("Les heures vont de 0 à 23 (inclus)");
-    }
-}

@@ -13,9 +13,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="com.intellij.jpb.JpaRepository" />
         <option value="Interface" />
-        <option value="Record" />
         <option value="Class" />
+        <option value="Record" />
         <option value="Exception" />
       </list>
     </option>
@@ -59,39 +60,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Maven.Run_or_Die-Before-Course [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Run_or_Die-Before-Course [compile].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Run_or_Die-Before-Course [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Run_or_Die-Before-Course [package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.Run_or_Die-Before-Course [validate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.infrastructure [clean].executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.PresentationApplication.executor&quot;: &quot;Run&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.JAVA&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JAR Application.packaging-FINAL.jar.executor": "Run",
+    "Maven.Run_or_Die [clean].executor": "Run",
+    "Maven.Run_or_Die [package].executor": "Run",
+    "Maven.Run_or_Die-Before-Course [clean].executor": "Run",
+    "Maven.Run_or_Die-Before-Course [compile].executor": "Run",
+    "Maven.Run_or_Die-Before-Course [install].executor": "Run",
+    "Maven.Run_or_Die-Before-Course [package].executor": "Run",
+    "Maven.Run_or_Die-Before-Course [validate].executor": "Run",
+    "Maven.infrastructure [clean].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Application (1).executor": "Run",
+    "Spring Boot.Application.executor": "Run",
+    "Spring Boot.PresentationApplication.executor": "Run",
+    "Spring Boot.RunOrDieApplication.executor": "Run",
+    "Spring Boot.Run_or_Die.executor": "Run",
+    "last_opened_file_path": "D:/Users/yannick/epita/MTI/JEE/Run_or_Die/packaging/src/main",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "rearrange.code.on.save": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "configurable.group.com.intellij.jpa.jpb.model.tools"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="fr.epita.mti.jee.infrastructure.persistence.repository.runner" />
+      <recent name="fr.epita.mti.jee.infrastructure.services" />
       <recent name="fr.epita.mti.jee.domain.exception.zombie" />
       <recent name="fr.epita.mti.jee.infrastructure.service" />
       <recent name="fr.epita.mti.jee.presentation.dto.zombies" />
-      <recent name="fr.epita.mti.jee.infrastructure.persistence.repository" />
-      <recent name="fr.epita.mti.jee.application.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\yannick\epita\MTI\JEE\Run_or_Die\packaging\src\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\yannick\epita\MTI\JEE\Run_or_Die\packaging\src\main" />
+      <recent name="D:\Users\yannick\epita\MTI\JEE\Run_or_Die\infrastructure\src\main\resources\db" />
+      <recent name="D:\Users\yannick\epita\MTI\JEE\Run_or_Die\infrastructure\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="fr.epita.mti.jee.exposition.dto.user.requests" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fr.epita.mti.jee.packaging" />
+      <recent name="fr.epita.mti.jee.domain.models.coureur" />
       <recent name="fr.epita.mti.jee.domain.exception.participants.runner" />
       <recent name="fr.epita.mti.jee.presentation.dto.zombies" />
       <recent name="fr.epita.mti.jee.domain.repository" />
@@ -108,21 +130,30 @@
         <entry key="SpringBootApplicationConfigurationType">
           <value>
             <map>
-              <entry key="PresentationApplication" value="STOPPED" />
+              <entry key="Run_or_Die" value="STOPPED" />
             </map>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="PresentationApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="exposition" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="fr.epita.mti.jee.exposition.PresentationApplication" />
+  <component name="RunManager" selected="Spring Boot.Run_or_Die">
+    <configuration name="packaging-FINAL.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/jar/packaging-FINAL.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Run_or_Die" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="packaging" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fr.epita.mti.jee.packaging.RunOrDieApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.packaging-FINAL.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

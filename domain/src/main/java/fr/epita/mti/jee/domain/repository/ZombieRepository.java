@@ -1,19 +1,18 @@
 package fr.epita.mti.jee.domain.repository;
 
-import fr.epita.mti.jee.domain.model.edition.Edition;
-import fr.epita.mti.jee.domain.model.zombie.Zombie;
+import fr.epita.mti.jee.domain.models.utilisateur.Utilisateur;
+import fr.epita.mti.jee.domain.models.zombie.Zombie;
 
-import java.util.List;
 import java.util.Set;
 
 public interface ZombieRepository {
-    Zombie create(Zombie zombie);
+    Zombie create(Zombie domainZombie);
 
-    List<Zombie> getByEmail(String email);
+    Set<Zombie> getWithSameUser(Utilisateur user);
 
-    Set<Zombie> getByEmailInEdition(String email, Edition edition);
+    Set<Zombie> getWithSameUserInEdition(Zombie domainZombie);
 
-    void delete(Zombie zombie);
+    void delete(Zombie domainZombie);
 
-    void updateTimeSlot(Zombie zombie);
+    void updateTimeSlot(Zombie domainZombie);
 }

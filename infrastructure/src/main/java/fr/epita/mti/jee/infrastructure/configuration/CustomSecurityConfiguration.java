@@ -1,29 +1,33 @@
 package fr.epita.mti.jee.infrastructure.configuration;
 
 
+import fr.epita.mti.jee.domain.exceptions.user.UserNotFoundException;
+import fr.epita.mti.jee.infrastructure.persistence.entities.UserJpaEntity;
+import fr.epita.mti.jee.infrastructure.persistence.repository.user.UserRepositoryJPA;
 import jakarta.servlet.http.HttpServletResponse;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.JdbcUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
-
-import javax.sql.DataSource;
 
 @Configuration
 public class CustomSecurityConfiguration {
 
-    public DataSource datasource;
+    UserRepositoryJPA userRepositoryJPA;
 
-    public CustomSecurityConfiguration(DataSource datasource) {
-        this.datasource = datasource;
+    @Autowired
+    public CustomSecurityConfiguration(UserRepositoryJPA userRepositoryJPA) {
+        this.userRepositoryJPA = userRepositoryJPA;
     }
 
     @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+    public SecurityFilterChain filterChain(HttpSecurity http) {
         return http.csrf(csrf -> csrf.ignoringRequestMatchers("/database/**", "/**"))
 
             .headers(headers -> headers.frameOptions(HeadersConfigurer.FrameOptionsConfig::sameOrigin))
@@ -35,31 +39,39 @@ public class CustomSecurityConfiguration {
             }))
 
             .authorizeHttpRequests(authorize -> authorize
-                .requestMatchers("/**")
-                .permitAll()
-                .requestMatchers("/login", "/error")
-                .permitAll()
-                .requestMatchers("/database/**", "/swagger/**")
-                .permitAll()
-                .requestMatchers("/api-edition/**")
-                .hasRole("ORGANISATEUR")
-                .requestMatchers("/api-zombie/**")
-                .hasRole("UTILISATEUR")
-                .requestMatchers("/api-user/**")
-                .permitAll()
-                .anyRequest()
-                .authenticated())
+                .requestMatchers("/login", "/error").permitAll()
+                .requestMatchers("/database/**", "/swagger/**").permitAll()
+
+                .requestMatchers("/api-edition/**").hasRole("ORGANIZER")
+
+                .requestMatchers("/api-zombie/histogram/").permitAll()
+                .requestMatchers("/api-zombie/**").hasRole("USER")
+
+                .requestMatchers("/api-runner/**").hasRole("USER")
+
+                .requestMatchers("/api-user/user").permitAll()
+                .requestMatchers("/api-user/users").hasRole("ORGANIZER")
+                .requestMatchers("/api-user/**").hasRole("USER")
+
+                .anyRequest().authenticated())
 
             .build();
     }
 
     @Bean
-    public JdbcUserDetailsManager jdbcUserDetailsManager() {
-        JdbcUserDetailsManager manager = new JdbcUserDetailsManager(datasource);
-        manager.setUsersByUsernameQuery("select username,password,enabled " +
-                                        "from users " +
-                                        "where username = ?");
-        return manager;
+    public UserDetailsService user() {
+        return username -> {
+            UserJpaEntity userEntity = userRepositoryJPA
+                .findByUsername(username)
+                .orElseThrow(UserNotFoundException::new);
+
+            return User
+                .builder()
+                .username(userEntity.getUsername())
+                .password(userEntity.getPassword())
+                .roles(userEntity.getRole())
+                .build();
+        };
     }
 
     @Bean

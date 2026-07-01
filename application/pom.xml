@@ -6,8 +6,8 @@
 
     <parent>
         <groupId>fr.epita.mti.jee</groupId>
-        <artifactId>Run_or_Die-Before-Course</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <artifactId>Run_or_Die</artifactId>
+        <version>FINAL</version>
     </parent>
 
     <artifactId>application</artifactId>
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>fr.epita.mti.jee</groupId>
             <artifactId>domain</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>FINAL</version>
         </dependency>
     </dependencies>
 </project>
