@@ -60,38 +60,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JAR Application.packaging-FINAL.jar.executor": "Run",
-    "Maven.Run_or_Die [clean].executor": "Run",
-    "Maven.Run_or_Die [package].executor": "Run",
-    "Maven.Run_or_Die-Before-Course [clean].executor": "Run",
-    "Maven.Run_or_Die-Before-Course [compile].executor": "Run",
-    "Maven.Run_or_Die-Before-Course [install].executor": "Run",
-    "Maven.Run_or_Die-Before-Course [package].executor": "Run",
-    "Maven.Run_or_Die-Before-Course [validate].executor": "Run",
-    "Maven.infrastructure [clean].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Application (1).executor": "Run",
-    "Spring Boot.Application.executor": "Run",
-    "Spring Boot.PresentationApplication.executor": "Run",
-    "Spring Boot.RunOrDieApplication.executor": "Run",
-    "Spring Boot.Run_or_Die.executor": "Run",
-    "last_opened_file_path": "D:/Users/yannick/epita/MTI/JEE/Run_or_Die/packaging/src/main",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "rearrange.code.on.save": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "configurable.group.com.intellij.jpa.jpb.model.tools"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JAR Application.packaging-FINAL.jar.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Run_or_Die [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Run_or_Die [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Run_or_Die-Before-Course [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Run_or_Die-Before-Course [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Run_or_Die-Before-Course [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Run_or_Die-Before-Course [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Run_or_Die-Before-Course [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.infrastructure [clean].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.PresentationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.RunOrDieApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Run_or_Die.executor&quot;: &quot;Run&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/yannick/epita/MTI/JEE/Run_or_Die/packaging/src/main&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.SQL&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="fr.epita.mti.jee.infrastructure.persistence.repository.runner" />
@@ -125,30 +125,26 @@
         <option value="SpringBootApplicationConfigurationType" />
       </set>
     </option>
-    <option name="configurationStatuses">
-      <map>
-        <entry key="SpringBootApplicationConfigurationType">
-          <value>
-            <map>
-              <entry key="Run_or_Die" value="STOPPED" />
-            </map>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Run_or_Die">
+  <component name="RunManager" selected="Spring Boot.Run or Die">
     <configuration name="packaging-FINAL.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/jar/packaging-FINAL.jar" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2" />
     </configuration>
-    <configuration name="Run_or_Die" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="Run or Die" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ALTERNATIVE_JRE_PATH" value="21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="packaging" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="fr.epita.mti.jee.packaging.RunOrDieApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="fr.epita.mti.jee.run_or_die.packaging.RunOrDieApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JAR Application.packaging-FINAL.jar" />
+      <item itemvalue="Spring Boot.Run or Die" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JAR Application.packaging-FINAL.jar" />
