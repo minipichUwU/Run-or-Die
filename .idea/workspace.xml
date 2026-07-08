@@ -80,6 +80,7 @@
     &quot;Spring Boot.Application (1).executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.PresentationApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.Run or Die.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.RunOrDieApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.Run_or_Die.executor&quot;: &quot;Run&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Users/yannick/epita/MTI/JEE/Run_or_Die/packaging/src/main&quot;,
@@ -112,11 +113,11 @@
       <recent name="fr.epita.mti.jee.exposition.dto.user.requests" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="fr.epita.mti.jee.run_or_die.domain.exceptions.user" />
       <recent name="fr.epita.mti.jee.packaging" />
       <recent name="fr.epita.mti.jee.domain.models.coureur" />
       <recent name="fr.epita.mti.jee.domain.exception.participants.runner" />
       <recent name="fr.epita.mti.jee.presentation.dto.zombies" />
-      <recent name="fr.epita.mti.jee.domain.repository" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -124,6 +125,17 @@
       <set>
         <option value="SpringBootApplicationConfigurationType" />
       </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="SpringBootApplicationConfigurationType">
+          <value>
+            <map>
+              <entry key="Run or Die" value="FAILED" />
+            </map>
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Run or Die">
