@@ -92,8 +92,8 @@ Personne ne s'est porté volontaire pour aider `mastermind` pour l'organisation.
 
 ## Lancement
 
-Clonez le repo github.  
-Depuis la racine du repo, lancez :
+Clonez le dépôt Git.  
+Depuis la racine du dépôt, lancez :
 
 ```bash
 java -jar .\jar\packaging-FINAL.jar
